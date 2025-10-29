@@ -553,17 +553,4 @@ def main():
 
 if __name__ == "__main__":
     import sys
-    # ví dụ chạy mic
-    sys.argv = [
-        "realtime_decode.py",
-        "--stream",
-        "--model_checkpoint", "/home/trinhchau/code/EduAssist/api/services/chunkformer-large-vie",
-       "--long_form_audio","/home/trinhchau/code/EduAssist/data/AI_voice_2p.wav",
-        "--left_context_size", "128",
-        "--right_context_size", "32",
-        "--stream_chunk_sec", "0.5",
-        "--lookahead_sec", "0.5",
-        "--stable_reserve_words", "1",
-    ]
-
     main()
