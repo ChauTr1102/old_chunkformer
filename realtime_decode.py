@@ -101,8 +101,6 @@ def stream_audio(args, model, char_dict):
         if DEVICE.type == "cuda":
             torch.cuda.empty_cache()
 
-    print("\nDone.")
-
 # ========== main ==========
 def main():
     p = argparse.ArgumentParser()
